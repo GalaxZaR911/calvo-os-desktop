@@ -1,0 +1,29 @@
+
+# Imagenes del sistema
+*.iso
+*.img
+*.vdi
+*.vmdk
+*.qcow2
+
+# Archivos de compilacion
+/live-build/desktop/.build/
+/live-build/desktop/cache/
+/live-build/desktop/chroot/
+/live-build/desktop/binary/
+/live-build/desktop/bootstrap/
+/live-build/desktop/source/
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+# Credenciales
+.env
+.env.*
+*.pem
+*.key

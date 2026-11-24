@@ -1,0 +1,34 @@
+# CaLvo.OS Desktop - Paquetes principales
+
+# Sistema grafico
+xorg
+xinit
+
+# Gestor de ventanas
+i3-wm
+i3status
+i3lock
+
+# Barra superior
+polybar
+
+# Fondo de pantalla
+feh
+
+# Terminal
+xterm
+
+# Inicio de sesion
+lightdm
+lightdm-gtk-greeter
+
+# Navegador
+firefox-esr
+
+# Herramientas basicas
+dbus-x11
+network-manager
+network-manager-gnome
+polkitd
+pkexec
+fonts-dejavu-core

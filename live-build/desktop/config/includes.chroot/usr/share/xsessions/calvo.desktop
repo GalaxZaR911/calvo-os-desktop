@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=CaLvo.OS Desktop
+Comment=Escritorio minimalista de CaLvo.OS
+Exec=i3
+TryExec=i3
+Type=Application
+DesktopNames=i3

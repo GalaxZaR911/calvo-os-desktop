@@ -1,0 +1,68 @@
+configuration {
+    modi: "drun,run";
+    show-icons: false;
+    display-drun: "Centro de operaciones calvas";
+    display-run: "Comandos sin cabello";
+    font: "DejaVu Sans 12";
+}
+
+* {
+    background: #101820;
+    foreground: #F2F6FA;
+    accent: #56B4FF;
+    panel: #202D3A;
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+window {
+    width: 55%;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 15px;
+    background-color: @background;
+    padding: 20px;
+}
+
+mainbox {
+    spacing: 15px;
+    children: [inputbar, listview];
+}
+
+inputbar {
+    background-color: @panel;
+    border-radius: 8px;
+    padding: 12px;
+    spacing: 10px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    placeholder: "Que abrimos hoy, calvito?";
+    placeholder-color: #A0AAB5;
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    spacing: 5px;
+    scrollbar: false;
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color: @background;
+}
+
+element-text {
+    text-color: inherit;
+}

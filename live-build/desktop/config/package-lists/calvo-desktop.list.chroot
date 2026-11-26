@@ -32,3 +32,8 @@ network-manager-gnome
 polkitd
 pkexec
 fonts-dejavu-core
+
+
+
+# Centro de operaciones calvas
+rofi

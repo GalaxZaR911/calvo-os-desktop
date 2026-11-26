@@ -68,3 +68,6 @@ exec --no-startup-id $HOME/.config/i3/start-polybar.sh
 
 # Cargar el fondo oficial al iniciar i3
 exec --no-startup-id $HOME/.config/i3/start-wallpaper.sh
+
+# Centro de operaciones calvas
+bindsym $mod+d exec --no-startup-id rofi -show drun

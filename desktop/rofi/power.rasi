@@ -1,0 +1,71 @@
+* {
+    background: #101820;
+    foreground: #F2F6FA;
+    panel: #202D3A;
+    gold: #F4C95D;
+    blue: #56B4FF;
+    background-color: transparent;
+    text-color: @foreground;
+    font: "DejaVu Sans 12";
+}
+
+window {
+    width: 440px;
+    location: center;
+    anchor: center;
+    border: 2px;
+    border-color: @blue;
+    border-radius: 15px;
+    background-color: @background;
+    padding: 12px;
+}
+
+mainbox {
+    spacing: 8px;
+    children: [inputbar, listview, message];
+}
+
+inputbar {
+    background-color: @panel;
+    border-radius: 8px;
+    padding: 14px;
+    children: [prompt];
+}
+
+prompt {
+    text-color: @gold;
+    font: "DejaVu Sans Bold 14";
+}
+
+listview {
+    lines: 6;
+    columns: 1;
+    spacing: 5px;
+    scrollbar: false;
+}
+
+element {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+element selected.normal {
+    background-color: @gold;
+    text-color: @background;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+message {
+    padding: 12px;
+    border: 1px 0px 0px 0px;
+    border-color: #34495E;
+}
+
+textbox {
+    text-color: @gold;
+    horizontal-align: 0.5;
+}

@@ -74,3 +74,6 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # Explorador de calvaturas
 bindsym $mod+e exec --no-startup-id thunar
+
+# Navegar sin despeinarnos
+bindsym $mod+b exec --no-startup-id firefox-esr

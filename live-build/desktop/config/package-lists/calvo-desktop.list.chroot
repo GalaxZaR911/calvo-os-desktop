@@ -37,3 +37,6 @@ fonts-dejavu-core
 
 # Centro de operaciones calvas
 rofi
+
+# Explorador de calvaturas
+thunar

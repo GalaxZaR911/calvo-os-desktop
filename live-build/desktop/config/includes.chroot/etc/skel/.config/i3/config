@@ -71,3 +71,6 @@ exec --no-startup-id $HOME/.config/i3/start-wallpaper.sh
 
 # Centro de operaciones calvas
 bindsym $mod+d exec --no-startup-id rofi -show drun
+
+# Explorador de calvaturas
+bindsym $mod+e exec --no-startup-id thunar

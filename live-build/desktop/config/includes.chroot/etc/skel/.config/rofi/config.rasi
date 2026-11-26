@@ -1,6 +1,8 @@
+/* CaLvo.OS - Dark Gold Edition */
+
 configuration {
     modi: "drun,run";
-    show-icons: false;
+    show-icons: true;
     display-drun: "Centro de operaciones calvas";
     display-run: "Comandos sin cabello";
     font: "DejaVu Sans 12";
@@ -9,60 +11,98 @@ configuration {
 * {
     background: #101820;
     foreground: #F2F6FA;
-    accent: #56B4FF;
+    gold: #F4C95D;
+    blue: #56B4FF;
     panel: #202D3A;
     background-color: transparent;
     text-color: @foreground;
 }
 
 window {
-    width: 55%;
+    width: 520px;
+    location: center;
+    anchor: center;
     border: 2px;
-    border-color: @accent;
+    border-color: @blue;
     border-radius: 15px;
     background-color: @background;
     padding: 20px;
 }
 
 mainbox {
-    spacing: 15px;
-    children: [inputbar, listview];
+    spacing: 12px;
+    children: [textbox-titulo, inputbar, listview, textbox-mensaje];
+}
+
+textbox-titulo {
+    content: "Centro de operaciones calvas";
+    font: "DejaVu Sans Bold 15";
+    text-color: @gold;
+    horizontal-align: 0.5;
+    expand: false;
+    padding: 8px;
 }
 
 inputbar {
     background-color: @panel;
     border-radius: 8px;
-    padding: 12px;
+    padding: 14px;
     spacing: 10px;
-    children: [prompt, entry];
-}
-
-prompt {
-    text-color: @accent;
+    children: [entry];
+    expand: false;
 }
 
 entry {
-    placeholder: "Que abrimos hoy, calvito?";
+    placeholder: "¿Qué abrimos hoy, calvito?";
     placeholder-color: #A0AAB5;
 }
 
 listview {
-    lines: 8;
+    lines: 6;
     columns: 1;
-    spacing: 5px;
+    spacing: 6px;
     scrollbar: false;
+    fixed-height: false;
+    dynamic: true;
+    expand: true;
+    border: 0px;
 }
 
 element {
+    children: [element-icon, element-text];
+    spacing: 12px;
     padding: 10px;
     border-radius: 8px;
 }
 
+element normal.normal,
+element alternate.normal {
+    background-color: @panel;
+    text-color: @foreground;
+}
+
 element selected.normal {
-    background-color: @accent;
+    background-color: @gold;
     text-color: @background;
 }
 
+element-icon {
+    size: 26px;
+    background-color: transparent;
+}
+
 element-text {
+    background-color: transparent;
+    vertical-align: 0.5;
     text-color: inherit;
+}
+
+textbox-mensaje {
+    content: "Más productividad, menos champú.";
+    text-color: @gold;
+    horizontal-align: 0.5;
+    expand: false;
+    padding: 10px;
+    border: 1px 0px 0px 0px;
+    border-color: #34495E;
 }

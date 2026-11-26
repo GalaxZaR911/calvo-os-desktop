@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Descansar la calva
+GenericName=Menu de energia
+Comment=Hasta los calvos necesitan descansar
+Exec=sh -c "exec ~/.config/i3/power-menu.sh"
+Icon=system-shutdown
+Terminal=false
+Categories=System;

@@ -40,3 +40,8 @@ rofi
 
 # Explorador de calvaturas
 thunar
+
+# Sonido sin cabello
+pipewire-alsa
+pipewire-pulse
+wireplumber

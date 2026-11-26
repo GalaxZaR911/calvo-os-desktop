@@ -15,7 +15,7 @@ set $text     #F2F6FA
 font pango:monospace 10
 
 # Terminal
-set $terminal xterm
+set $terminal $HOME/.config/calvo-os/terminal/start-terminal.sh
 bindsym $mod+Return exec $terminal
 
 # Cerrar ventana

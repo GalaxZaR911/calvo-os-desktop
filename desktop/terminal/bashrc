@@ -1,0 +1,31 @@
+# CaLvo.OS - Terminal sin cabello
+
+case $- in
+    *i*) ;;
+    *) return ;;
+esac
+
+# Cargar configuracion habitual de Bash
+if [ -r "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+fi
+
+# Historial de comandos
+HISTSIZE=1000
+HISTFILESIZE=2000
+HISTCONTROL=ignoredups:ignorespace
+
+shopt -s histappend
+shopt -s checkwinsize
+
+# Prompt oficial de CaLvo.OS
+PS1='\[\e[1;34m\][CaLvo.OS]\[\e[0m\] \[\e[32m\]\u@\h\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ '
+
+# Bienvenida
+if [ -r "$HOME/.config/calvo-os/terminal/calvofetch.sh" ]; then
+    bash "$HOME/.config/calvo-os/terminal/calvofetch.sh"
+fi
+
+# Comando estilo fastfetch de CaLvo.OS
+
+alias calvofetch='bash "$HOME/.config/calvo-os/terminal/calvofetch.sh"'

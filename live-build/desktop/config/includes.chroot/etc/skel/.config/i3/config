@@ -8,8 +8,11 @@ set $mod Mod4
 # Colores oficiales
 set $bg       #101820
 set $panel    #202D3A
-set $accent   #56B4FF
+set $accent   #F4C95D
 set $text     #F2F6FA
+set $blue     #56B4FF
+set $border   #34495E
+set $urgent   #FF6B6B
 
 # Fuente
 font pango:monospace 10
@@ -45,9 +48,14 @@ bindsym $mod+Shift+3 move container to workspace number 3
 bindsym $mod+Shift+4 move container to workspace number 4
 
 # Bordes y colores
-default_border pixel 2
-client.focused          $accent $accent $bg $accent $accent
-client.unfocused        $panel $panel $text $panel $panel
+default_border normal 2
+default_floating_border normal 2
+gaps inner 8
+gaps outer 4
+client.focused          $accent $accent $bg $blue $accent
+client.unfocused        $border $panel $text $panel $border
+client.focused_inactive $border $panel $text $panel $border
+client.urgent           $urgent $urgent $bg $urgent $urgent
 
 # Reiniciar configuracion
 bindsym $mod+Shift+r restart

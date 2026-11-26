@@ -26,7 +26,7 @@ dato() {
         printf '\033[%s;40H' "$fila"
     fi
 
-    printf '\033[1;36m%-12s\033[0m %s\n' "$1" "$2"
+    printf '\033[1;33m%-12s\033[0m %s\n' "$1" "$2"
     fila=$((fila + 1))
 }
 
@@ -57,4 +57,4 @@ if [[ "$grafico" == 1 ]]; then
     printf '\033[27;1H'
 fi
 
-printf '\n\033[1;36mSin pelo, sin problemas.\033[0m\n\n'
+printf '\n\033[1;33mSin pelo, sin problemas.\033[0m\n\n'

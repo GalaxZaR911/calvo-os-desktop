@@ -19,7 +19,7 @@ shopt -s histappend
 shopt -s checkwinsize
 
 # Prompt oficial de CaLvo.OS
-PS1='\[\e[1;34m\][CaLvo.OS]\[\e[0m\] \[\e[32m\]\u@\h\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ '
+PS1='\[\e[1;33m\][CaLvo.OS]\[\e[0m\] \[\e[34m\]\u@\h\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ '
 
 # Bienvenida
 if [ -r "$HOME/.config/calvo-os/terminal/calvofetch.sh" ]; then

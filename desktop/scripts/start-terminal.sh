@@ -17,7 +17,7 @@ exec xterm \
     -fs 11 \
     -bg "#101820" \
     -fg "#F2F6FA" \
-    -cr "#56B4FF" \
+    -cr "#F4C95D" \
     -xrm "XTerm*numColorRegisters: 256" \
     -xrm "XTerm*internalBorder: 10" \
     -xrm "XTerm*color1: #FF6B6B" \

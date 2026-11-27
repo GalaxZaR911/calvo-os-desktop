@@ -21,14 +21,25 @@ Actualmente CaLvo.OS cuenta con tres versiones experimentales.
 | Versión | Interfaz | Tamaño | Estado |
 |---|---|---|---|
 | **V2.1 Dark Gold Lite** | i3 / X11 | 830,47 MB | Actual |
-| V0.2 Desktop Alpha | i3 / X11 | 1.406,53 MB | Anterior |
-| V0.1 Minimal | Consola TTY | 347 MiB | Primera versión |
+| V0.2 First Desktop | i3 / X11 | 1.406,53 MB | Anterior |
+| V0.1 Genesis | Consola TTY | 363,86 MB | Primera versión |
 
-### 🌟 [Descargar CaLvo.OS V2.1 Dark Gold Lite](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0)
+### 🌟 [Descargar CaLvo.OS V2.1 - Dark Gold Lite](https://github.com/GalaxZaR911/calvo-os-desktop/releases/download/v2.1.0/CaLvo.OS-Dark-Gold-Lite-amd64.iso)
 
 **Nuestra versión actual y recomendada para probar CaLvo.OS.**
 
 Las versiones anteriores siguen disponibles para quienes quieran conocer cómo fue evolucionando el proyecto.
+
+
+### Próximamente: CaLvo.OS V2.2 — Dark Gold Dual Edition
+
+- Edición X11 con i3.
+- Edición Wayland con Sway.
+- Instalador gráfico Calamares previsto.
+- Objetivo: cada ISO inferior a 1 GB.
+
+Actualmente en desarrollo y pendiente de pruebas de instalación.
+
 
 ---
 
@@ -56,7 +67,7 @@ El objetivo fue conseguir un escritorio funcional que ocupara menos de 1 GB, sin
 | Tamaño | 830.472.192 bytes |
 | Instalador a disco | No incluido |
 
-**[⬇️ Descargar Dark Gold Lite V2.1](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0)**
+**[Descargar CaLvo.OS V2.1 - Dark Gold Lite](https://github.com/GalaxZaR911/calvo-os-desktop/releases/download/v2.1.0/CaLvo.OS-Dark-Gold-Lite-amd64.iso)**
 
 ## ¿Qué incluye Dark Gold Lite?
 
@@ -236,7 +247,7 @@ La reducción permite cumplir el límite académico de 1 GB, aunque la ausencia 
 
 ---
 
-# 02. CaLvo.OS V0.2 — Desktop Alpha
+# 02. CaLvo.OS V0.2 — First Desktop (Alpha)
 
 **La primera vez que la calva tuvo escritorio.**
 
@@ -259,7 +270,7 @@ Pasamos de una consola Linux básica a un sistema con ventanas, navegador, barra
 | Tamaño | 1.406,53 MB |
 | Estado | Alpha experimental |
 
-**[⬇️ Descargar CaLvo.OS Desktop Alpha](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v0.2.0-desktop-alpha)**
+**[Descargar CaLvo.OS V0.2 - First Desktop](https://github.com/GalaxZaR911/calvo-os-desktop/releases/download/v0.2.0-desktop-alpha/CaLvo.OS-desktop-amd64.iso)**
 
 ## ¿Qué incluye Desktop Alpha?
 
@@ -333,7 +344,7 @@ No es la edición recomendada para usuarios nuevos. Para conocer el proyecto act
 
 ---
 
-# 03. CaLvo.OS V0.1 — Minimal
+# 03. CaLvo.OS V0.1 — Genesis (Minimal)
 
 **Antes de tener estilo, teníamos una terminal.**
 
@@ -356,7 +367,7 @@ Y funcionó.
 | Modalidad | Live |
 | Estado | Experimental |
 
-**[⬇️ Descargar CaLvo.OS Minimal V0.1](https://github.com/GalaxZaR911/calvo-os/releases/tag/v0.1.0-minimal)**
+**[Descargar CaLvo.OS V0.1 - Genesis](https://github.com/GalaxZaR911/calvo-os/releases/download/v0.1.0-minimal/live-image-amd64.hybrid.iso)**
 
 ## ¿Qué incluye Minimal?
 
@@ -481,7 +492,7 @@ La intención no es desarrollar un kernel desde cero, sino comprender cómo se c
 - [ ] Ampliar las pruebas de compatibilidad.
 - [ ] Documentar la compilación reproducible de Dark Gold Lite.
 - [ ] Integrar un instalador a disco.
-- [ ] Desarrollar la edición Wayland.
+- [ ] Validar la edición Wayland con Sway, ya compilada.
 - [ ] Incorporar herramientas completas de desarrollo web.
 - [ ] Crear el blog oficial con Hugo.
 - [ ] Preparar la documentación académica en LaTeX.
@@ -507,7 +518,7 @@ Las configuraciones, características y atajos pueden cambiar entre versiones.
 
 ### 🌟 Versión actual
 
-**[CaLvo.OS V2.1 Dark Gold Lite — Descargar ISO](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0)**
+**[Descargar CaLvo.OS V2.1 - Dark Gold Lite](https://github.com/GalaxZaR911/calvo-os-desktop/releases/download/v2.1.0/CaLvo.OS-Dark-Gold-Lite-amd64.iso)**
 
 La edición gráfica actual, optimizada para ocupar menos de 1 GB.
 
@@ -519,7 +530,7 @@ Desarrollo del escritorio gráfico, configuraciones y versiones Desktop.
 
 ### 📜 Versiones anteriores
 
-**[CaLvo.OS Desktop Alpha V0.2](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v0.2.0-desktop-alpha)**
+**[Descargar CaLvo.OS V0.2 - First Desktop](https://github.com/GalaxZaR911/calvo-os-desktop/releases/download/v0.2.0-desktop-alpha/CaLvo.OS-desktop-amd64.iso)**
 
 Nuestra primera experiencia construyendo un escritorio gráfico.
 

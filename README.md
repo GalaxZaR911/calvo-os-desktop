@@ -1,41 +1,218 @@
-# 🧑‍🦲 CaLvo.OS — Dark Gold Lite
+# CaLvo.OS 🧑‍🦲
 
 ### Sin pelo, sin problemas.
 
-**CaLvo.OS** es una distribución GNU/Linux experimental basada en **Debian 13 Trixie**, diseñada para ofrecer un escritorio ligero, moderno y personalizado, con una identidad visual propia inspirada en Calvito.
+**CaLvo.OS** es una distribución GNU/Linux basada en Debian 13 Trixie. Nació como un proyecto universitario de Sistemas Operativos y, poco a poco, se está convirtiendo en un escritorio personalizado con identidad propia.
 
-El proyecto combina minimalismo, tecnología, productividad y humor.
+La idea es sencilla: construir un Linux ligero, fácil de utilizar y con las herramientas necesarias para trabajar, aprender y experimentar.
+
+¿La diferencia? Aquí no necesitamos cabello para tener estilo.
+
+Nuestra mascota es **Calvito**, un personaje que nos acompaña en el escritorio, la terminal y las herramientas del sistema.
+
+> *Perdimos el cabello, no el estilo.*
 
 ---
 
-## 🚀 Última versión: V2.1 Dark Gold Lite
+## 📥 Descargas y versiones
 
-**Versión:** `v2.1.0`  
-**Sistema base:** Debian 13 Trixie  
-**Arquitectura:** AMD64 (64 bits)  
-**Gestor de ventanas:** i3-WM  
-**Servidor gráfico:** X11  
-**Interfaz:** Dark Gold  
-**Tamaño:** 830,47 MB (792 MiB)  
-**Estado:** Experimental — Live ISO
+Actualmente CaLvo.OS cuenta con tres versiones experimentales.
 
-### 📥 Descargar CaLvo.OS
+| Versión | Interfaz | Tamaño | Estado |
+|---|---|---|---|
+| **V2.1 Dark Gold Lite** | i3 / X11 | 830,47 MB | Actual |
+| V0.2 Desktop Alpha | i3 / X11 | 1.406,53 MB | Anterior |
+| V0.1 Minimal | Consola TTY | 347 MiB | Primera versión |
 
-**[⬇️ DESCARGAR CALVO.OS V2.1 DARK GOLD LITE](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0)**
+### 🌟 [Descargar CaLvo.OS V2.1 Dark Gold Lite](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0)
 
-La página de descarga contiene el archivo:
+**Nuestra versión actual y recomendada para probar CaLvo.OS.**
 
-`CaLvo.OS-Dark-Gold-Lite-amd64.iso`
+Las versiones anteriores siguen disponibles para quienes quieran conocer cómo fue evolucionando el proyecto.
 
-### 🔐 Verificación SHA-256
+---
+
+# 01. CaLvo.OS V2.1 — Dark Gold Lite
+
+**La calva se viste de gala.**
+
+Esta es nuestra versión gráfica más reciente. Conserva las herramientas principales de escritorio de la edición anterior, pero incorpora una estética Dark Gold y una reducción importante del tamaño de la ISO.
+
+El objetivo fue conseguir un escritorio funcional que ocupara menos de 1 GB, sin perder la identidad de CaLvo.OS.
+
+### Información de la versión
+
+| Característica | Detalle |
+|---|---|
+| Versión | v2.1.0 |
+| Base | Debian 13 Trixie |
+| Arquitectura | AMD64 |
+| Interfaz | i3 Window Manager |
+| Sistema gráfico | X11 |
+| Barra superior | Polybar |
+| Lanzador | Rofi |
+| Terminal | XTerm |
+| Formato | Live ISO |
+| Tamaño | 830.472.192 bytes |
+| Instalador a disco | No incluido |
+
+**[⬇️ Descargar Dark Gold Lite V2.1](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0)**
+
+## ¿Qué incluye Dark Gold Lite?
+
+### Escritorio y apariencia
+
+- i3 como gestor de ventanas.
+- Polybar con indicadores de recursos.
+- Fondo oficial de Calvito.
+- Tema oscuro con detalles dorados y celestes.
+- Bordes personalizados en las ventanas.
+- Cuatro espacios de trabajo configurados.
+- Inicio gráfico mediante LightDM.
+
+### Aplicaciones principales
+
+| Nombre en CaLvo.OS | Aplicación | Uso |
+|---|---|---|
+| Centro de operaciones calvas | Rofi | Buscar y abrir programas |
+| Terminal sin cabello | XTerm | Ejecutar comandos |
+| Explorador de calvaturas | Thunar | Gestionar archivos |
+| Navegar sin despeinarnos | Firefox ESR | Navegar por Internet |
+| CalvoFetch | Herramienta propia | Consultar información del sistema |
+| Descansar la calva | Script propio | Administrar opciones de energía |
+
+También incluye NetworkManager, Feh, PipeWire, WirePlumber e i3lock, entre otros componentes.
+
+### CalvoFetch
+
+Nuestra pequeña herramienta de información del sistema.
+
+Al abrir la terminal, CalvoFetch puede mostrar el sistema base, usuario, kernel, procesador, memoria RAM, tipo de sesión y la mascota oficial.
+
+Y dos datos que no podían faltar:
+
+**Cabello:** 0 %  
+**Nivel:** Legendario
+
+La mascota cuenta con una representación gráfica para terminales compatibles con Sixel y un modo textual alternativo.
+
+## Requisitos para utilizar V2.1
+
+La siguiente es la configuración utilizada como referencia para probar esta edición en VirtualBox.
+
+| Recurso | Configuración de prueba |
+|---|---|
+| Procesador | x86-64 / AMD64 |
+| Memoria RAM | 2 GB asignados |
+| Procesadores virtuales | 2 |
+| Programa | Oracle VirtualBox |
+| Espacio de descarga | Al menos 1 GB libre para la ISO |
+| Disco virtual | No es necesario para arrancar en modo Live |
+
+Estos valores corresponden al entorno de pruebas, no a requisitos mínimos certificados para todo tipo de computadora.
+
+## Cómo iniciar Dark Gold Lite
+
+1. Descarga la ISO desde GitHub Releases.
+2. Abre VirtualBox y crea una nueva máquina virtual.
+3. Selecciona Linux y Debian (64-bit).
+4. Asigna 2048 MB de RAM y 2 procesadores.
+5. Desactiva la instalación desatendida.
+6. Conecta la ISO descargada a la unidad óptica.
+7. Inicia la máquina virtual.
+8. Selecciona `Live system (amd64)`.
+9. Una vez que cargue el escritorio, utiliza los atajos para abrir las aplicaciones.
+
+No necesitas instalar la distribución en el disco para probar esta edición.
+
+## Atajos de Dark Gold Lite
+
+En CaLvo.OS utilizamos la tecla **Super**, conocida normalmente como la tecla Windows.
+
+### Abrir aplicaciones
+
+| Atajo | Acción |
+|---|---|
+| `Win + Enter` | Terminal sin cabello |
+| `Win + D` | Centro de operaciones calvas |
+| `Win + E` | Explorador de calvaturas |
+| `Win + B` | Navegar sin despeinarnos |
+| `Win + P` | Descansar la calva |
+
+### Administrar ventanas
+
+| Atajo | Acción |
+|---|---|
+| `Win + Shift + Q` | Cerrar ventana activa |
+| `Win + F` | Pantalla completa |
+| `Win + Shift + R` | Reiniciar i3 |
+| `Win + 1` hasta `Win + 4` | Cambiar espacio de trabajo |
+| `Win + Shift + 1` hasta `Win + Shift + 4` | Mover ventana a otro espacio |
+
+### Comandos útiles
+
+Abre la terminal con `Win + Enter`.
+
+```bash
+# Información del sistema
+uname -r
+
+# Memoria disponible
+free -h
+
+# Espacio de almacenamiento
+df -h
+
+# Interfaces de red
+ip a
+
+# Consultar procesos de i3
+pgrep -a i3
+
+# Consultar procesos de Polybar
+pgrep -a polybar
+
+# Recargar i3
+i3-msg reload
+
+# Cerrar la terminal actual
+exit
+```
+
+Para ejecutar CalvoFetch manualmente, comprueba primero su ubicación:
+
+```bash
+command -v calvofetch
+```
+
+Si está disponible en el PATH, puedes ejecutarlo con `calvofetch`.
+
+## Menú de energía: Descansar la calva
+
+Se abre mediante `Win + P`.
+
+| Acción | Mensaje |
+|---|---|
+| Apagar | Hasta mañana, cabeza brillante |
+| Reiniciar | Renovando el brillo de la calva |
+| Suspender | Una siesta no hace crecer el pelo |
+| Bloquear | Protegiendo secretos capilares |
+| Cerrar sesión | Calvo temporalmente ausente |
+| Cancelar | La calva sigue trabajando |
+
+Las acciones importantes utilizan mensajes de confirmación para evitar ejecutarlas accidentalmente.
+
+### Verificar la ISO V2.1
+
+**SHA-256:**
 
 ```text
 6646eeac658311179a46208f63234db650f8fb503565143b0011cda2d72de400
 ```
 
-Para verificar el archivo descargado en Windows:
+En Windows CMD:
 
-```powershell
+```cmd
 certutil -hashfile "CaLvo.OS-Dark-Gold-Lite-amd64.iso" SHA256
 ```
 
@@ -45,198 +222,321 @@ En Linux:
 sha256sum CaLvo.OS-Dark-Gold-Lite-amd64.iso
 ```
 
-La huella obtenida debe coincidir exactamente con la indicada anteriormente.
+La huella obtenida debe coincidir con la publicada.
+
+### ¿Qué cambió respecto a Desktop Alpha?
+
+La edición anterior pesaba aproximadamente 1,4 GB. Dark Gold Lite pesa 830,47 MB.
+
+Se redujo el tamaño cerca de un **40,96 %**, mediante ajustes de Debian Live Build, exclusión de firmware adicional y eliminación de índices APT de la imagen final.
+
+La reducción permite cumplir el límite académico de 1 GB, aunque la ausencia de determinados paquetes de firmware puede afectar la compatibilidad con equipos físicos.
+
+**Esta es la edición recomendada para conocer el escritorio actual de CaLvo.OS.**
 
 ---
 
-## ✨ Características principales
+# 02. CaLvo.OS V0.2 — Desktop Alpha
 
-### 🖥️ Escritorio Dark Gold
+**La primera vez que la calva tuvo escritorio.**
+
+Desktop Alpha fue nuestro primer paso importante hacia una distribución con interfaz gráfica.
+
+Pasamos de una consola Linux básica a un sistema con ventanas, navegador, barra superior y fondo de pantalla personalizado.
+
+### Información de la versión
+
+| Característica | Detalle |
+|---|---|
+| Versión | v0.2.0-desktop-alpha |
+| Base | Debian 13 Trixie |
+| Arquitectura | AMD64 |
+| Gestor de ventanas | i3 |
+| Sistema gráfico | X11 |
+| Barra | Polybar |
+| Gestor de inicio | LightDM |
+| Terminal | XTerm |
+| Tamaño | 1.406,53 MB |
+| Estado | Alpha experimental |
+
+**[⬇️ Descargar CaLvo.OS Desktop Alpha](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v0.2.0-desktop-alpha)**
+
+## ¿Qué incluye Desktop Alpha?
 
 - i3 Window Manager.
-- Barra superior Polybar personalizada.
-- Fondo oficial de CaLvo.OS.
-- Identidad visual Dark Gold.
-- Bordes dorados para ventanas activas.
-- Espacios de trabajo dinámicos.
-- Indicadores de CPU, RAM, red, batería y volumen.
-- Inicio de sesión gráfico mediante LightDM.
+- Xorg.
+- Polybar.
+- XTerm.
+- Firefox ESR.
+- Thunar.
+- NetworkManager.
+- Feh.
+- LightDM.
+- Fondo de pantalla original de CaLvo.OS.
 
-### 🧑‍🦲 Centro de operaciones calvas
+Esta versión nos permitió comprobar que era posible integrar nuestra configuración gráfica dentro de una ISO Live.
 
-Lanzador personalizado basado en Rofi.
+## Requisitos para probar Desktop Alpha
 
-- Buscador de aplicaciones.
-- Iconos y accesos personalizados.
-- Tema oscuro y selección dorada.
-- Mensajes humorísticos exclusivos de CaLvo.OS.
+Configuración recomendada para pruebas en VirtualBox:
 
-### 💻 Terminal sin cabello
-
-Terminal XTerm personalizada con:
-
-- Colores Dark Gold.
-- Prompt personalizado.
-- CalvoFetch.
-- Información del sistema.
-- Mascota Calvito.
-- Frases humorísticas.
-
-### 📦 Aplicaciones incluidas
-
-| Aplicación | Función |
+| Recurso | Configuración |
 |---|---|
-| i3-WM | Gestión de ventanas |
-| Polybar | Barra del escritorio |
-| Rofi | Lanzador de aplicaciones |
-| Thunar | Explorador de archivos |
-| Firefox ESR | Navegador web |
-| XTerm | Terminal |
-| CalvoFetch | Información personalizada |
-| NetworkManager | Administración de red |
-| PipeWire | Sistema de audio |
-| Feh | Fondo de pantalla |
-| LightDM | Inicio de sesión |
+| Arquitectura | 64 bits |
+| RAM | 2 GB |
+| Procesadores virtuales | 2 |
+| Software | Oracle VirtualBox |
+| Espacio para la ISO | Aproximadamente 1,5 GB |
+
+Estas recomendaciones no sustituyen pruebas formales de requisitos mínimos.
+
+## Cómo utilizar Desktop Alpha
+
+1. Descarga la ISO de la versión Alpha.
+2. Crea una máquina virtual Debian de 64 bits.
+3. Asigna 2 GB de RAM y 2 procesadores.
+4. Conecta la ISO a la unidad óptica.
+5. Inicia el sistema en modo Live.
+6. Espera a que aparezca el escritorio gráfico.
+
+### Uso básico del escritorio
+
+La edición utiliza i3, por lo que no tiene un menú Inicio tradicional como Windows.
+
+Los programas se abren mediante atajos o desde una terminal.
+
+Para conocer los atajos exactos de esta edición, consulta su configuración de i3. No todas las personalizaciones de V2.1 estaban presentes en Desktop Alpha.
+
+Entre los comandos habituales de i3 se encuentran:
+
+```bash
+# Comprobar el gestor de ventanas
+i3 --version
+
+# Recargar su configuración
+i3-msg reload
+
+# Consultar información del sistema
+cat /etc/os-release
+
+# Comprobar memoria
+free -h
+```
+
+## ¿Por qué conservamos esta versión?
+
+Desktop Alpha nos permite mostrar cómo evolucionó CaLvo.OS.
+
+También sirve como referencia para comparar el tamaño de las ISO y los cambios visuales y técnicos implementados posteriormente.
+
+No es la edición recomendada para usuarios nuevos. Para conocer el proyecto actual, descarga Dark Gold Lite.
 
 ---
 
-## ⌨️ Atajos de teclado
+# 03. CaLvo.OS V0.1 — Minimal
 
-| Atajo | Función |
+**Antes de tener estilo, teníamos una terminal.**
+
+Minimal fue nuestra primera distribución Linux construida con Debian Live Build.
+
+No tenía escritorio gráfico ni la apariencia actual de Calvito. Su propósito era comprobar que podíamos crear una ISO propia, iniciar un kernel Linux y ejecutar un sistema Live en VirtualBox.
+
+Y funcionó.
+
+### Información de la versión
+
+| Característica | Detalle |
 |---|---|
-| `Win + Enter` | Terminal sin cabello |
-| `Win + D` | Centro de operaciones calvas |
-| `Win + E` | Explorador de calvaturas |
-| `Win + B` | Navegar sin despeinarnos |
-| `Win + P` | Descansar la calva |
-| `Win + Shift + Q` | Cerrar ventana activa |
-| `Win + F` | Pantalla completa |
-| `Win + 1...4` | Cambiar espacio de trabajo |
-| `Win + Shift + 1...4` | Mover ventana a otro espacio |
-| `Win + Shift + R` | Reiniciar i3 |
+| Versión | v0.1.0-minimal |
+| Sistema base | Debian 13 Trixie |
+| Arquitectura | AMD64 |
+| Interfaz | Terminal TTY |
+| Gestor gráfico | No incluido |
+| Tamaño | 347 MiB aproximadamente |
+| Modalidad | Live |
+| Estado | Experimental |
 
----
+**[⬇️ Descargar CaLvo.OS Minimal V0.1](https://github.com/GalaxZaR911/calvo-os/releases/tag/v0.1.0-minimal)**
 
-## 💿 Cómo ejecutar CaLvo.OS en VirtualBox
+## ¿Qué incluye Minimal?
 
-### Requisitos recomendados para pruebas
+- Sistema base Debian 13.
+- Kernel Linux.
+- Herramientas básicas de consola.
+- Arranque Live.
+- Inicio de sesión automático.
+- Sistema de archivos Live mediante overlay.
 
-- Procesador de 64 bits.
-- 2 GB de RAM asignados a la máquina virtual.
-- 2 procesadores virtuales.
-- Oracle VirtualBox.
-- Espacio suficiente para almacenar la ISO y la máquina virtual.
+No incluye Firefox, Polybar, Rofi, i3 ni las personalizaciones gráficas de las versiones Desktop.
 
-### Instalación de la máquina virtual de prueba
+## Requisitos para probar Minimal
 
-1. Descarga la ISO desde la sección **Releases**.
-2. Abre Oracle VirtualBox.
-3. Selecciona **Nueva**.
-4. Introduce `CaLvo.OS-Test` como nombre.
-5. Selecciona Linux → Debian (64-bit).
-6. Asigna 2048 MB de RAM.
-7. Configura 2 procesadores virtuales.
-8. Desactiva la instalación desatendida.
-9. Conecta la ISO descargada a la unidad óptica.
-10. Inicia la máquina virtual.
-11. Selecciona `Live system (amd64)` en el menú de arranque.
-12. Comprueba que aparezca el escritorio Dark Gold.
+Configuración utilizada como referencia:
 
-**Importante:** esta versión funciona en modo Live. Todavía no incorpora un instalador definitivo para instalar CaLvo.OS en el disco duro.
-
----
-
-## 🎨 Identidad visual
-
-### Colores oficiales
-
-| Elemento | Color |
+| Recurso | Configuración |
 |---|---|
-| Fondo | `#101820` |
-| Paneles | `#202D3A` |
-| Dorado principal | `#F4C95D` |
-| Celeste secundario | `#56B4FF` |
-| Texto | `#F2F6FA` |
-| Bordes | `#34495E` |
+| Arquitectura | AMD64 |
+| RAM | 2 GB |
+| Procesadores virtuales | 2 |
+| Software | VirtualBox |
+| Disco virtual | No es obligatorio en modo Live |
 
-**Mascota oficial:** Calvito.
+El sistema es más pequeño que las ediciones gráficas, pero sus requisitos mínimos exactos no se han certificado.
 
-**Eslogan principal:** Sin pelo, sin problemas.
+## Cómo iniciar Minimal
 
-**Eslogan secundario:** Perdimos el cabello, no el estilo.
+1. Descarga la ISO Minimal.
+2. Crea una máquina virtual Debian de 64 bits.
+3. Conecta la ISO.
+4. Inicia la máquina.
+5. Selecciona `Live system (amd64)`.
+6. Espera el inicio automático de sesión.
 
----
+Al iniciar aparecerá una consola similar a:
 
-## 📊 Evolución del proyecto
+```text
+user@debian:~$
+```
 
-| Versión | Tamaño | Estado |
-|---|---:|---|
-| V0.1 Minimal | 347 MiB | Publicada |
-| V0.2 Desktop Alpha | 1.406,53 MB | Publicada |
-| V2.1 Dark Gold Lite | 830,47 MB | Publicada |
+Esto es normal. Minimal todavía conserva la identificación Debian en varios componentes.
 
-La versión V2.1 redujo aproximadamente un **40,96 %** el tamaño de la ISO Desktop Alpha, manteniendo los componentes principales de la interfaz gráfica.
+## Comandos de Minimal
 
-Esta optimización se realizó mediante ajustes de Debian Live Build, reducción del firmware incluido y eliminación de índices APT de la imagen final.
+Como no utiliza un escritorio gráfico, se administra desde la terminal.
 
-La exclusión de firmware puede limitar la compatibilidad con determinados equipos físicos.
+| Comando | Función |
+|---|---|
+| `ls` | Mostrar archivos y carpetas |
+| `pwd` | Mostrar la ubicación actual |
+| `cd` | Cambiar de directorio |
+| `cat /etc/os-release` | Identificar el sistema |
+| `uname -r` | Consultar el kernel |
+| `free -h` | Mostrar memoria disponible |
+| `df -h` | Consultar almacenamiento |
+| `findmnt /` | Consultar el sistema de archivos raíz |
+| `exit` | Salir de la sesión actual |
 
----
+En esta edición no existen los atajos gráficos de i3.
 
-## 🛠️ Estado del desarrollo
+### Verificación SHA-256
 
-### Completado
+```text
+a2739c0c0ce9f6ec0fa8f6826af02cf233eb219241394b4f8f3d769d78807955
+```
 
-- [x] Sistema base Debian 13.
-- [x] ISO mínima funcional.
-- [x] Escritorio i3 personalizado.
-- [x] Tema visual Dark Gold.
-- [x] Polybar.
-- [x] Rofi.
-- [x] Thunar y Firefox ESR.
-- [x] Terminal personalizada.
-- [x] CalvoFetch.
-- [x] Optimización de la ISO a menos de 1 GB.
-- [x] Prueba general de arranque en VirtualBox.
-- [x] Publicación de V2.1 en GitHub Releases.
+## ¿Para qué sirve esta edición?
 
-### En desarrollo
+Minimal está pensada principalmente como una prueba técnica de construcción y arranque.
 
-- [ ] Integración definitiva del logotipo Golden Calvo.
-- [ ] Documentación de construcción reproducible.
-- [ ] Instalador gráfico.
-- [ ] Herramientas completas para desarrollo web.
-- [ ] Edición Wayland.
-- [ ] Blog oficial con Hugo.
-- [ ] Pruebas ampliadas de compatibilidad.
-- [ ] Documentación técnica en LaTeX.
+Es el punto de partida de todo el proyecto y permite ver la evolución desde una consola básica hasta nuestro escritorio Dark Gold.
 
 ---
 
-## ⚠️ Aviso importante
+# Comparación entre versiones
 
-CaLvo.OS V2.1 Dark Gold Lite es una versión experimental desarrollada con fines académicos.
+| Característica | Minimal | Desktop Alpha | Dark Gold Lite |
+|---|:---:|:---:|:---:|
+| Debian 13 | ✅ | ✅ | ✅ |
+| Arranque Live | ✅ | ✅ | ✅ |
+| Consola Linux | ✅ | ✅ | ✅ |
+| Interfaz i3 | — | ✅ | ✅ |
+| Polybar | — | ✅ | ✅ |
+| Firefox ESR | — | ✅ | ✅ |
+| Thunar | — | ✅ | ✅ |
+| Tema Dark Gold | — | — | ✅ |
+| Rofi personalizado | — | — | ✅ |
+| CalvoFetch personalizado | — | — | ✅ |
+| Menú de energía propio | — | — | ✅ |
+| ISO menor a 1 GB | ✅ | — | ✅ |
+| Instalador a disco | — | — | — |
 
-Se recomienda ejecutarla inicialmente en una máquina virtual.
-
-No está destinada todavía a reemplazar el sistema operativo principal de una computadora.
+✅ Incluido en la versión.  
+— No incluido o no documentado para esa edición.
 
 ---
 
-## 🔗 Enlaces oficiales
+# ¿Cuál versión debería descargar?
 
-**Repositorio Desktop:**  
-https://github.com/GalaxZaR911/calvo-os-desktop
+**Si quieres conocer CaLvo.OS tal como se ve actualmente**, descarga V2.1 Dark Gold Lite.
 
-**Descargar V2.1:**  
-https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0
+**Si quieres comparar el primer escritorio con el actual**, prueba Desktop Alpha.
 
-**Repositorio Minimal:**  
-https://github.com/GalaxZaR911/calvo-os
+**Si quieres experimentar con una distribución Linux desde consola**, Minimal es la indicada.
+
+Las tres versiones se conservan como parte de la historia del proyecto.
 
 ---
 
-### 🧑‍🦲 CaLvo.OS
+# Sobre el desarrollo de CaLvo.OS
+
+CaLvo.OS comenzó como un trabajo universitario para aprender a construir una distribución Linux no independiente.
+
+Durante su desarrollo hemos trabajado con Debian Live Build, Bash, Git, VirtualBox y diferentes herramientas de personalización.
+
+La intención no es desarrollar un kernel desde cero, sino comprender cómo se construye, configura, documenta y distribuye un sistema Linux basado en Debian.
+
+## Próximas mejoras
+
+- [ ] Completar la integración del logotipo Golden Calvo.
+- [ ] Ampliar las pruebas de compatibilidad.
+- [ ] Documentar la compilación reproducible de Dark Gold Lite.
+- [ ] Integrar un instalador a disco.
+- [ ] Desarrollar la edición Wayland.
+- [ ] Incorporar herramientas completas de desarrollo web.
+- [ ] Crear el blog oficial con Hugo.
+- [ ] Preparar la documentación académica en LaTeX.
+- [ ] Continuar optimizando estabilidad y rendimiento.
+
+---
+
+# Avisos importantes
+
+CaLvo.OS es un proyecto experimental en desarrollo.
+
+Las ISO actuales se han preparado principalmente para pruebas en máquinas virtuales y no deben considerarse sustitutos listos para producción de Debian.
+
+Ninguna de las tres versiones documentadas aquí incorpora todavía un instalador definitivo a disco.
+
+La compatibilidad con hardware físico depende de los controladores y firmware disponibles en cada edición.
+
+Las configuraciones, características y atajos pueden cambiar entre versiones.
+
+---
+
+# Enlaces oficiales
+
+### 🌟 Versión actual
+
+**[CaLvo.OS V2.1 Dark Gold Lite — Descargar ISO](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0)**
+
+La edición gráfica actual, optimizada para ocupar menos de 1 GB.
+
+### 🖥️ Repositorio Desktop
+
+**[GalaxZaR911/calvo-os-desktop](https://github.com/GalaxZaR911/calvo-os-desktop)**
+
+Desarrollo del escritorio gráfico, configuraciones y versiones Desktop.
+
+### 📜 Versiones anteriores
+
+**[CaLvo.OS Desktop Alpha V0.2](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v0.2.0-desktop-alpha)**
+
+Nuestra primera experiencia construyendo un escritorio gráfico.
+
+### 💻 Edición Minimal
+
+**[GalaxZaR911/calvo-os](https://github.com/GalaxZaR911/calvo-os)**
+
+El repositorio donde comenzó todo.
+
+---
+
+# 🧑‍🦲 CaLvo.OS
+
 **Sin pelo, sin problemas.**
 
 *Perdimos el cabello, no el estilo.*
+
+Desarrollado sobre Debian GNU/Linux.
+
+**La evolución continúa.**

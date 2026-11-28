@@ -16,13 +16,17 @@ Nuestra mascota es **Calvito**, un personaje que nos acompaña en el escritorio,
 
 ## 📥 Descargas y versiones
 
-Actualmente CaLvo.OS cuenta con tres versiones experimentales.
+CaLvo.OS tiene tres generaciones publicadas y dos variantes WM V2.2 que ya están compiladas, pero siguen **en pruebas**.
 
-| Versión | Interfaz | Tamaño | Estado |
+| Versión | Interfaz | Tamaño ISO | Estado |
 |---|---|---|---|
-| **V2.1 Dark Gold Lite** | i3 / X11 | 830,47 MB | Actual |
-| V0.2 First Desktop | i3 / X11 | 1.406,53 MB | Anterior |
-| V0.1 Genesis | Consola TTY | 363,86 MB | Primera versión |
+| **V2.2 WM i3 — Dark Gold** | i3 / X11 | 955,25 MB | Compilada; instalación pendiente |
+| **V2.2 WM Sway — Dark Gold** | Sway / Wayland | 874,51 MB | Compilada; instalación pendiente |
+| **V2.1 Dark Gold Lite** | i3 / X11 | 830,47 MB | **Última versión publicada** |
+| V0.2 First Desktop Alpha | i3 / X11 | 1.406,53 MB | Histórica |
+| V0.1 Genesis | Consola TTY | 363,86 MB | Histórica |
+
+**Descarga recomendada hoy:** [CaLvo.OS V2.1 Dark Gold Lite](https://github.com/GalaxZaR911/calvo-os-desktop/releases/tag/v2.1.0). **V2.2 aún no está publicada**: no ofrecemos archivos de prueba como descargas estables.
 
 ### 🌟 [Descargar CaLvo.OS V2.1 - Dark Gold Lite](https://github.com/GalaxZaR911/calvo-os-desktop/releases/download/v2.1.0/CaLvo.OS-Dark-Gold-Lite-amd64.iso)
 
@@ -31,15 +35,115 @@ Actualmente CaLvo.OS cuenta con tres versiones experimentales.
 Las versiones anteriores siguen disponibles para quienes quieran conocer cómo fue evolucionando el proyecto.
 
 
-### Próximamente: CaLvo.OS V2.2 — Dark Gold Dual Edition
+### En pruebas: CaLvo.OS V2.2 — Dark Gold WM Edition
 
-- Edición X11 con i3.
-- Edición Wayland con Sway.
-- Instalador gráfico Calamares previsto.
-- Objetivo: cada ISO inferior a 1 GB.
+Las dos ISO WM están compiladas y pasaron la comprobación de integridad SHA-256. **Calamares ya está incluido**, pero todavía falta demostrar una instalación completa en disco virtual, comprobar GRUB y confirmar que el sistema instalado arranca sin la ISO.
 
-Actualmente en desarrollo y pendiente de pruebas de instalación.
+- i3 con X11 y barra Polybar; prueba prevista con BIOS.
+- Sway con Wayland y barra Waybar; prueba prevista con UEFI.
+- Las dos ISO están por debajo de 1 GB y mantienen el estilo Dark Gold.
+- Los accesos al instalador desde escritorio, barra y Rofi deben verificarse en modo Live y comprobarse ausentes después de instalar.
 
+Consulta [la guía de pruebas V2.2](docs/WM-V2.2.md), [el historial de versiones](docs/VERSIONES.md) y [los SHA-256 de las ISO locales](docs/SHA256-V2.2-PRUEBAS.txt).
+
+
+---
+
+# 00. CaLvo.OS V2.2 — Dark Gold WM Edition (en pruebas)
+
+**Dos escritorios, una misma calva.** La versión V2.2 propone dos formas de usar CaLvo.OS: i3, que funciona sobre X11, y Sway, que funciona sobre Wayland. Las dos variantes mantienen nuestra identidad Dark Gold y están orientadas a probar la instalación permanente con Calamares.
+
+> **Estado real:** ISO compiladas, comprobadas por tamaño y SHA-256. La instalación permanente aún **no está aprobada**. No hay enlace público de descarga para V2.2.
+
+## i3 — X11 (firmware BIOS para pruebas)
+
+La edición para quienes prefieren un gestor de ventanas ligero y directo. Aquí mantenemos el estilo de escritorio basado en i3 y nuestra barra Polybar.
+
+| Característica | Información |
+|---|---|
+| Sistema base | Debian 13 Trixie, AMD64 |
+| Gestor de ventanas | i3 |
+| Servidor gráfico | X11 |
+| Barra superior | Polybar |
+| Instalador | Calamares, integrado; instalación no verificada |
+| ISO local | `CaLvo.OS-v2.2-WM-i3-X11-amd64.iso` |
+| Tamaño ISO | 955.252.736 bytes |
+| Firmware de prueba | BIOS |
+
+### Qué trae
+
+- Tema Dark Gold, logotipo Golden Calvo y fondo de pantalla.
+- Terminal personalizada y CalvoFetch.
+- Firefox ESR, Thunar y Rofi.
+- Menú de energía personalizado.
+- Gestión de red y sonido.
+- Calamares y recursos de personalización del instalador.
+
+### Equipo de prueba preparado
+
+VirtualBox 7.2.22, **3.072 MB RAM**, **2 CPU**, disco **VDI dinámico de 20 GB**, VMSVGA con **128 MB** de vídeo, aceleración 3D inicialmente apagada y red desactivada. Son parámetros de laboratorio, **no mínimos certificados para hardware físico**.
+
+**Máquina:** `CaLvo.OS-V2.2-i3-Test`
+
+## Sway — Wayland (firmware UEFI para pruebas)
+
+Nuestra segunda variante WM. Cambia la base gráfica por Wayland y utiliza Sway con Waybar. Es una edición experimental; si aparece un problema gráfico en VirtualBox, se diagnosticará antes de modificar la ISO.
+
+| Característica | Información |
+|---|---|
+| Sistema base | Debian 13 Trixie, AMD64 |
+| Gestor de ventanas | Sway |
+| Protocolo gráfico | Wayland |
+| Barra superior | Waybar |
+| Instalador | Calamares, integrado; instalación no verificada |
+| ISO local | `CaLvo.OS-v2.2-WM-Sway-Wayland-amd64.iso` |
+| Tamaño ISO | 874.512.384 bytes |
+| Firmware de prueba | UEFI |
+
+### Qué trae
+
+- El mismo tema Dark Gold y el logotipo Golden Calvo.
+- Terminal personalizada y CalvoFetch.
+- Firefox ESR, Thunar y Rofi.
+- Menú de energía personalizado.
+- Gestión de red y sonido.
+- Calamares y recursos de personalización del instalador.
+
+### Equipo de prueba preparado
+
+VirtualBox 7.2.22, **3.072 MB RAM**, **2 CPU**, disco **VDI dinámico de 20 GB**, VMSVGA con **128 MB** de vídeo, aceleración 3D inicialmente apagada y red desactivada. Son parámetros de laboratorio, **no mínimos certificados para hardware físico**.
+
+**Máquina:** `CaLvo.OS-V2.2-Sway-Test`
+
+## Cómo se comprobará V2.2
+
+Primero i3 y después Sway. En cada edición verificaremos el escritorio, el icono del instalador, el botón **INSTALAR** de la barra y la entrada de Rofi. Después abriremos Calamares y realizaremos la instalación **sin Internet y exclusivamente en el VDI nuevo de la VM**.
+
+El resultado solo se considerará aprobado cuando, tras retirar la ISO, el disco instalado arranque, permita iniciar sesión, conserve el tema y los archivos, y ya no muestre los accesos exclusivos del instalador Live.
+
+### Comandos útiles durante la prueba
+
+```bash
+cat /etc/os-release
+uname -r
+free -h
+lsblk -o NAME,SIZE,TYPE,MOUNTPOINTS
+command -v calamares
+echo "$XDG_SESSION_TYPE"
+```
+
+### ¿Y los atajos de teclado?
+
+Los atajos definitivos de **V2.2 i3 y Sway** aún deben cotejarse con las configuraciones finales de ambas ISO. No copiamos los de V2.1 como si ya estuvieran comprobados. Los de V2.1 se documentan abajo y la lista de verificación está en [docs/WM-V2.2.md](docs/WM-V2.2.md).
+
+## Integridad de las ISO locales
+
+| Edición | SHA-256 |
+|---|---|
+| i3 / X11 | `f2b4d9fa0984b4bb9470f2b5d6724e3a451541e5fe17a771e999e4f6d380f84d` |
+| Sway / Wayland | `8a390c909749fd7b4cbb5117c8fd7c94fb0ab7afb57c014e942b391e5998b5a8` |
+
+Estos valores son para verificar los archivos **locales de prueba**, no indican que exista una Release V2.2 descargable.
 
 ---
 
@@ -47,7 +151,7 @@ Actualmente en desarrollo y pendiente de pruebas de instalación.
 
 **La calva se viste de gala.**
 
-Esta es nuestra versión gráfica más reciente. Conserva las herramientas principales de escritorio de la edición anterior, pero incorpora una estética Dark Gold y una reducción importante del tamaño de la ISO.
+Esta es nuestra versión gráfica publicada más reciente. Conserva las herramientas principales de escritorio de la edición anterior, pero incorpora una estética Dark Gold y una reducción importante del tamaño de la ISO.
 
 El objetivo fue conseguir un escritorio funcional que ocupara menos de 1 GB, sin perder la identidad de CaLvo.OS.
 
@@ -102,7 +206,7 @@ Al abrir la terminal, CalvoFetch puede mostrar el sistema base, usuario, kernel,
 
 Y dos datos que no podían faltar:
 
-**Cabello:** 0 %  
+**Cabello:** 0 %
 **Nivel:** Legendario
 
 La mascota cuenta con una representación gráfica para terminales compatibles con Sixel y un modo textual alternativo.
@@ -461,7 +565,7 @@ Es el punto de partida de todo el proyecto y permite ver la evolución desde una
 | ISO menor a 1 GB | ✅ | — | ✅ |
 | Instalador a disco | — | — | — |
 
-✅ Incluido en la versión.  
+✅ Incluido en la versión.
 — No incluido o no documentado para esa edición.
 
 ---
@@ -491,8 +595,8 @@ La intención no es desarrollar un kernel desde cero, sino comprender cómo se c
 - [ ] Completar la integración del logotipo Golden Calvo.
 - [ ] Ampliar las pruebas de compatibilidad.
 - [ ] Documentar la compilación reproducible de Dark Gold Lite.
-- [ ] Integrar un instalador a disco.
-- [ ] Validar la edición Wayland con Sway, ya compilada.
+- [ ] Validar la instalación a disco de V2.2 con Calamares y arranque posterior.
+- [ ] Completar las pruebas de la edición Sway / Wayland, ya compilada.
 - [ ] Incorporar herramientas completas de desarrollo web.
 - [ ] Crear el blog oficial con Hugo.
 - [ ] Preparar la documentación académica en LaTeX.
@@ -506,7 +610,7 @@ CaLvo.OS es un proyecto experimental en desarrollo.
 
 Las ISO actuales se han preparado principalmente para pruebas en máquinas virtuales y no deben considerarse sustitutos listos para producción de Debian.
 
-Ninguna de las tres versiones documentadas aquí incorpora todavía un instalador definitivo a disco.
+Las ediciones V0.1, V0.2 y V2.1 son Live sin instalador a disco. En V2.2 Calamares está integrado, pero su instalación permanente todavía no está verificada.
 
 La compatibilidad con hardware físico depende de los controladores y firmware disponibles en cada edición.
 
@@ -514,9 +618,20 @@ Las configuraciones, características y atajos pueden cambiar entre versiones.
 
 ---
 
+# Documentación técnica
+
+- [Pruebas de CaLvo.OS V2.2 WM (i3 y Sway)](docs/WM-V2.2.md).
+- [Historial de ediciones y sus diferencias](docs/VERSIONES.md).
+- [SHA-256 de las ISO V2.2 locales](docs/SHA256-V2.2-PRUEBAS.txt).
+- [Guía histórica de compilación de Desktop Alpha](docs/BUILD.md). **Atención:** esta última guía es anterior a V2.2 y no describe una compilación reproducible y verificada de las nuevas ISO.
+
+**Las configuraciones fuente usadas para construir V2.2 todavía deben sincronizarse con el repositorio y verificarse.** No asumimos que `main` recompila esas imágenes de forma idéntica.
+
+---
+
 # Enlaces oficiales
 
-### 🌟 Versión actual
+### 🌟 Última versión publicada
 
 **[Descargar CaLvo.OS V2.1 - Dark Gold Lite](https://github.com/GalaxZaR911/calvo-os-desktop/releases/download/v2.1.0/CaLvo.OS-Dark-Gold-Lite-amd64.iso)**
 
